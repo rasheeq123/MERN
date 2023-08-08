@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* * is used to apply design to all the parts of html page*/
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .mycard{
+            width:25%;
+            border-radius: 10px;  /* for round corner of box*/
+            box-shadow: 2px 3px 5px 5px black; /*top, left, right, bottom*/
+            padding:50px; /* on the whole box and the content of the box will take 50px space from all directions and it can be given as 
+             padding-top: 60px; */
+
+            box-sizing: border-box; /*Sequence me arrrange ho jata h content box ka */
+            background-color: pink;
+        }
+        body{
+            display: flex;
+            margin:0; 
+            justify-content: center;  /*horizontal beech me aa rha */
+            align-items: center;  /*vertically beech me aa rha */
+            height: 100vh;
+            background-image: url("https://th.bing.com/th/id/R.ccfa9ddc26490623ae5a560f2478721f?rik=5LVJUIUlfTmf5w&riu=http%3a%2f%2fwallpapercave.com%2fwp%2f4lImLyA.jpg&ehk=2AQZ2jVoiesMErnFGBSxD2RbgdF%2fXjSF88oMXVEHU8o%3d&risl=&pid=ImgRaw&r=0");
+            background-size: cover;
+            backdrop-filter: blur (10px);
+        }
+        .myinput{
+            display:block;
+            width:100;
+            padding: 5px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border-bottom: 3px solid black;
+            
+            
+            background-color: #eee;
+
+        }
+        
+        .text{
+            text-align: center;
+        }
+        .mybtn{
+            width: 100%;
+            background-color: blueviolet;
+            padding: 10px 5px;
+            color: white;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            border:none;
+            border-radius: 5px;
+            transition-property: all; /* overall button pe apply ho like border wagera sb*/
+            transition-duration: 300ms; /*login button jo duration ke lie move ho rha*/
+        }
+        form{
+            margin-top: 50px;
+        }
+        .mybtn:hover{
+            transform:scale(1.1) translate(10px); /*button kis side hover hoga like aage ya piche*/
+            box-shadow: 0 -10px 10px -5px black;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="mycard">
+        
+        <p class="brand">Brand Logo</p>
+        <h2 class="text">Member Login</h2>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, cumque!</p>
+
+        <form>
+            <label for="email">Email</label>
+            <br>
+            <input class="myinput" type="email">
+            <br>
+            <label for="password">password</label>
+            <br>
+            <input class="myinput" type="password">
+            <br> <br>
+
+            <button class="mybtn">Login</button>
+        </form>
+
+</body>
+</html>

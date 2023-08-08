@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+   <link href="https://fonts.googleapis.com/css?family=Borel:regular" rel="stylesheet" /> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flex</title>
+    <style>
+        .container{
+            height:544px;
+            width:100%;
+            border:2px solid black;
+            display: flex;
+            flex-direction: row ;
+           /* flex-direction: row ; */
+           /* flex-direction: row-reverse ; */
+           /* flex-direction: column-reverse ; */
+           /* flex-wrap: wrap; even gap le lenge containers to agr hum size kam krenge to wo design ke bahar nhi jaenge rather wo adjust ho jaenge equal spacing ke saath*/
+           /*flex-wrap:wrap-reverse; arrangement oppsoite ho jaega flex wrap:wrap se */
+          /* flex-flow: column-wrap; row-wise bhr jaenge */
+           /* flex-flow: row-wrap; column-wise bhr jaenge */
+
+           /*Fn + F1 ko press krke google fonts ko laa skte, lekin cursor waha place krenge jaha hme link insert krna hoga, somewhere in <head> tag */
+            /*justify-content: center; /* all 3 conatiner beech me aa jaenge (horizontally)*/ 
+           /* justify-content: space-between; isse saare container poora space le lenge equally*/
+           /* justify-content: space-around; /*2 * element or container ka space = container container ke beech ka space/*
+           /*justify-content: space-evenly; ek even space container ke left-right side aa jaegi (container or element ke beech same space and container and container ke beech bhi equal space)*/
+           /* align-items: center;  both horizontally and vertically center pe*/
+           /* align-items: flex-start; by default yhi hota h */
+           /* align-items:  flex-end; niche aa jaenge */
+
+           /* flex-wrap: wrap;
+              align-items:stretch;
+              ye dono saath me lgte h or screen ke saath size chota hota jaata h jab tk wo chota ho skta h */
+
+        }
+        .item{
+            width:200px;
+            height:100px;
+            background-color: tomato;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        #item-1{
+            order:2;
+            flex-grow: 2;
+
+        }
+        #item-2{
+            order:1;
+            flex-grow: 3;
+        }
+        /* jinko koi order nhi denge tb unko zyada priority mill jaegi or wo aage aa jaenge */
+        
+
+    </style>
+</head>
+<body>
+    <h1>this is a flex box</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>        
+        <div class="item" id="item-2">Second Box</div>        
+        <div class="item" id="item-3">third Box</div>        
+        <!--<div class="item" id="item-4">fourth Box</div>        
+        <div class="item" id="item-5">fifth Box</div>        
+        <div class="item" id="item-6">sixth Box</div>        
+        <div class="item" id="item-7">seventh Box</div>   -->    
+
+    </div>
+</body>
+</html>
