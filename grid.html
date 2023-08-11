@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+             display: grid;
+            /* grid-template-columns: 300px 200px auto;  */
+            /*grid will be divided into equal number of column and each column will cover the given space */
+
+            /* grid-template-rows: 100px 300px 400px;  */
+            /* grid will be divided into equal number of rows and each row will cover the given space */
+
+            /* grid-template-columns:1fr 4fr 1fr; */
+            grid-template-columns: auto 4fr auto;
+
+            /* grid-template-columns: repeat(3,auto); */
+            /*sbko ek saath space dene ke lie, i.e all three grid will be auto, (shortcut for giving equal space ) */
+
+            gap:2rem;
+        }
+        .item{
+             /* height: 100px;
+            width: 100px;  */
+            background-color: blueviolet;
+            /* margin: 3px; */
+            align-content: center;
+        }
+        /*by default grid me column me aata h unlike flex*/
+    </style>
+</head>
+<body>
+    <div class= "container">
+   <div class="item">This is item-1</div> 
+   <div class="item">This is item-2</div> 
+   <div class="item">This is item-3</div> 
+   <div class="item">This is item-4</div> 
+   <div class="item">This is item-5</div> 
+   <div class="item">This is item-6</div> 
+   <div class="item">This is item-7</div> 
+   <div class="item">This is item-8</div> 
+   <div class="item">This is item-9</div> 
+   <div class="item">This is item-10</div> 
+   <!-- <div class="item">This is item-11</div> 
+   <div class="item">This is item-12</div>  -->
+</div>
+</body>
+</html>
