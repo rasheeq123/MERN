@@ -21,12 +21,12 @@
   <body class="bg-secondary">
     <header class="bg-dark text-white">
       <div class="container py-5 "> <!--pADDING deni h srf y axis pe-->
-        <h1 class="text-center display-1 fw-bold">Best Camera Offer</h1>
-        <h3 class="text-center fw-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, harum!</h3>
+        <h1 class="text-center display-1 fw-bold site-title">Best Camera Offer</h1> <!--side-title for animation through js code used below-->
+        <h3 class="text-center fw-light sub-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, harum!</h3>
 
         <div class="input-group mt-5 w-75 mx-auto"> <!--left or right me equal equal margin le lia pane aap mx-auto ke through-->
 
-        <input type="text" class="form-control form-control-lg ">
+        <input type="text" class="form-control form-control-lg my-input">
         <button class="btn btn-warning"><i class="bi bi-search"></i>
 
       </div>
@@ -149,5 +149,48 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal().reveal('.site-title',{
+         delay:300, // kitti deer baad animation play hoga
+        origin: 'top',
+        distance: '100px'   ,
+        duration: 500 ,// start hone se end hone tk 5s ka time lagega 
+        scale:1.5, 
+        // rotate:{
+        //   x:30,
+        //   y:30,
+        //   z:30
+        // }
+      });
+      ScrollReveal().reveal('.sub-title',{
+         delay:300, // kitti deer baad animation play hoga
+        origin: 'left',
+        distance: '200px'   ,
+        duration: 500 ,// start hone se end hone tk 5s ka time lagega 
+        scale:1.5, 
+        // rotate:{
+        //   x:30,
+        //   y:30,
+        //   z:30
+        // }
+      });
+      
+      ScrollReveal().reveal('.my-input',{
+         delay:300, // kitti deer baad animation play hoga
+        origin: 'left',
+        distance: '200px' 
+        
+      });
+      ScrollReveal().reveal('.card',{
+         delay:300, // kitti deer baad animation play hoga
+        origin: 'bottom',
+        distance: '200px' ,
+        interval:100
+        
+      });
+      
+      
+    </script>
   </body>
 </html>
