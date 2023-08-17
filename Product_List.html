@@ -16,6 +16,21 @@
         display: flex;
         align-items: center;
       }
+      .my-img{
+        height:300px;
+        /* object-fit: cover;   isme crop ho jata h*/
+         object-fit:contain;  /*isme crop nhi hota */
+        
+
+      }
+      .card{
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+        
+      }
+      .card-body{
+        transform: translateZ(20px);
+      }
     </style>
   </head>
   <body class="bg-secondary">
@@ -37,7 +52,7 @@
         <div class="row">
             <div class="col-md-3 mb-4"> <!--total 12 columns aate hai row me to ek column ko 3 column ka size denge islie md-3 so that ek row me 4 aa jae -->
                 <div class="card">
-                    <img class="card-img-top" src="https://www.bhphotovideo.com/images/images2500x2500/panasonic_dmc_zs60_s_lumix_dmc_zs60_digital_camera_1213208.jpg" alt="">
+                    <img class="card-img-top my-img" src="https://www.bhphotovideo.com/images/images2500x2500/panasonic_dmc_zs60_s_lumix_dmc_zs60_digital_camera_1213208.jpg" alt="">
 
                     <div class="card-body">
                      <h4 class="text-muted">Cannon</h4>
@@ -64,7 +79,88 @@
             </div>
             <div class="col-md-3 mb-4"> <!--total 12 columns aate hai row me to ek column ko 3 column ka size denge islie md-3 so that ek row me 4 aa jae -->
                 <div class="card">
-                    <img class="card-img-top" src="https://www.bhphotovideo.com/images/images2500x2500/panasonic_dmc_zs60_s_lumix_dmc_zs60_digital_camera_1213208.jpg" alt="">
+                    <img class="card-img-top my-img" src="https://www.bhphotovideo.com/images/images2000x2000/nikon_26462b_coolpix_p600_digital_camera_1348972.jpg">
+
+                    <div class="card-body">
+                     <h4 class="text-muted">Nikon COOLPIX 600</h4>
+                     <h2>Digital Camera</h2>
+
+                     <p>
+                      <i class="bi bi-star-fill text-warning"></i>
+                        <span>4.2 Stars from <b>38545</b>eviews</span>
+                     </p>
+                     <h1 class="float-start"> ₹ 19999</h1> <!--float-end for right side and float-start for left side-->
+
+
+
+                    </div>
+
+                    <div class="card-footer">
+                      <button class="btn btn-primary "> <i class="bi bi-cart-check-fill"></i> Add to cart</button>
+                    <button class=" btn btn-outline-primary">Shop Now</button>
+
+                    </div>
+                    
+
+                </div>
+            </div>
+            <div class="col-md-3 mb-4"> <!--total 12 columns aate hai row me to ek column ko 3 column ka size denge islie md-3 so that ek row me 4 aa jae -->
+                <div class="card">
+                    <img class="card-img-top my-img" src="https://www.bhphotovideo.com/images/images2500x2500/Fujifilm_15976371_S200EXR_FinePix_Super_Zoom_639209.jpg">
+
+                    <div class="card-body">
+                     <h4 class="text-muted">Fujifilm 2347</h4>
+                     <h2>Digital Camera</h2>
+
+                     <p>
+                      <i class="bi bi-star-fill text-warning"></i>
+                        <span>4.2 Stars from <b>38545</b>eviews</span>
+                     </p>
+                     <h1 class="float-start"> ₹ 11999</h1> <!--float-end for right side and float-start for left side-->
+
+
+
+                    </div>
+
+                    <div class="card-footer">
+                      <button class="btn btn-primary "> <i class="bi bi-cart-check-fill"></i> Add to cart</button>
+                    <button class=" btn btn-outline-primary">Shop Now</button>
+
+                    </div>
+                    
+
+                </div>
+            </div>
+            <div class="col-md-3 mb-4"> <!--total 12 columns aate hai row me to ek column ko 3 column ka size denge islie md-3 so that ek row me 4 aa jae -->
+                <div class="card">
+                    <img class="card-img-top my-img" src="https://th.bing.com/th/id/OIP.2FtdqvQG7Hb1FRX4iwL6pgHaFj?pid=ImgDet&w=1280&h=960&rs=1">
+
+                    <div class="card-body">
+                     <h4 class="text-muted">FUJIFILM 876</h4>
+                     <h2>Digital Camera</h2>
+
+                     <p>
+                      <i class="bi bi-star-fill text-warning"></i>
+                        <span>3.9 Stars from <b>38545</b>eviews</span>
+                     </p>
+                     <h1 class="float-start"> ₹ 13759</h1> <!--float-end for right side and float-start for left side-->
+
+
+
+                    </div>
+
+                    <div class="card-footer">
+                      <button class="btn btn-primary "> <i class="bi bi-cart-check-fill"></i> Add to cart</button>
+                    <button class=" btn btn-outline-primary">Shop Now</button>
+
+                    </div>
+                    
+
+                </div>
+            </div>
+            <div class="col-md-3 mb-4"> <!--total 12 columns aate hai row me to ek column ko 3 column ka size denge islie md-3 so that ek row me 4 aa jae -->
+                <div class="card">
+                    <img class="card-img-top my-img" src="https://www.bhphotovideo.com/images/images2500x2500/panasonic_dmc_zs60_s_lumix_dmc_zs60_digital_camera_1213208.jpg" alt="">
 
                     <div class="card-body">
                      <h4 class="text-muted">Cannon</h4>
@@ -91,17 +187,17 @@
             </div>
             <div class="col-md-3 mb-4"> <!--total 12 columns aate hai row me to ek column ko 3 column ka size denge islie md-3 so that ek row me 4 aa jae -->
                 <div class="card">
-                    <img class="card-img-top" src="https://www.bhphotovideo.com/images/images2500x2500/panasonic_dmc_zs60_s_lumix_dmc_zs60_digital_camera_1213208.jpg" alt="">
+                    <img class="card-img-top my-img" src="https://www.bhphotovideo.com/images/images2000x2000/nikon_26462b_coolpix_p600_digital_camera_1348972.jpg">
 
                     <div class="card-body">
-                     <h4 class="text-muted">Cannon</h4>
+                     <h4 class="text-muted">Nikon COOLPIX 600</h4>
                      <h2>Digital Camera</h2>
 
                      <p>
                       <i class="bi bi-star-fill text-warning"></i>
                         <span>4.2 Stars from <b>38545</b>eviews</span>
                      </p>
-                     <h1 class="float-start"> ₹ 15999</h1> <!--float-end for right side and float-start for left side-->
+                     <h1 class="float-start"> ₹ 19999</h1> <!--float-end for right side and float-start for left side-->
 
 
 
@@ -118,17 +214,44 @@
             </div>
             <div class="col-md-3 mb-4"> <!--total 12 columns aate hai row me to ek column ko 3 column ka size denge islie md-3 so that ek row me 4 aa jae -->
                 <div class="card">
-                    <img class="card-img-top" src="https://www.bhphotovideo.com/images/images2500x2500/panasonic_dmc_zs60_s_lumix_dmc_zs60_digital_camera_1213208.jpg" alt="">
+                    <img class="card-img-top my-img" src="https://www.bhphotovideo.com/images/images2500x2500/Fujifilm_15976371_S200EXR_FinePix_Super_Zoom_639209.jpg">
 
                     <div class="card-body">
-                     <h4 class="text-muted">Cannon</h4>
+                     <h4 class="text-muted">Fujifilm 2347</h4>
                      <h2>Digital Camera</h2>
 
                      <p>
                       <i class="bi bi-star-fill text-warning"></i>
                         <span>4.2 Stars from <b>38545</b>eviews</span>
                      </p>
-                     <h1 class="float-start"> ₹ 15999</h1> <!--float-end for right side and float-start for left side-->
+                     <h1 class="float-start"> ₹ 11999</h1> <!--float-end for right side and float-start for left side-->
+
+
+
+                    </div>
+
+                    <div class="card-footer">
+                      <button class="btn btn-primary "> <i class="bi bi-cart-check-fill"></i> Add to cart</button>
+                    <button class=" btn btn-outline-primary">Shop Now</button>
+
+                    </div>
+                    
+
+                </div>
+            </div>
+            <div class="col-md-3 mb-4"> <!--total 12 columns aate hai row me to ek column ko 3 column ka size denge islie md-3 so that ek row me 4 aa jae -->
+                <div class="card">
+                    <img class="card-img-top my-img" src="https://th.bing.com/th/id/OIP.2FtdqvQG7Hb1FRX4iwL6pgHaFj?pid=ImgDet&w=1280&h=960&rs=1">
+
+                    <div class="card-body">
+                     <h4 class="text-muted">FUJIFILM 876</h4>
+                     <h2>Digital Camera</h2>
+
+                     <p>
+                      <i class="bi bi-star-fill text-warning"></i>
+                        <span>3.9 Stars from <b>38545</b>eviews</span>
+                     </p>
+                     <h1 class="float-start"> ₹ 13759</h1> <!--float-end for right side and float-start for left side-->
 
 
 
@@ -152,7 +275,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
       ScrollReveal().reveal('.site-title',{
-         delay:300, // kitti deer baad animation play hoga
+         delay:200, // kitti deer baad animation play hoga
         origin: 'top',
         distance: '100px'   ,
         duration: 500 ,// start hone se end hone tk 5s ka time lagega 
@@ -164,11 +287,11 @@
         // }
       });
       ScrollReveal().reveal('.sub-title',{
-         delay:300, // kitti deer baad animation play hoga
-        origin: 'left',
-        distance: '200px'   ,
+         delay:200, // kitti deer baad animation play hoga
+        origin: 'top',
+        distance: '100px'   ,
         duration: 500 ,// start hone se end hone tk 5s ka time lagega 
-        scale:1.5, 
+        scale:1.5
         // rotate:{
         //   x:30,
         //   y:30,
@@ -177,20 +300,27 @@
       });
       
       ScrollReveal().reveal('.my-input',{
-         delay:300, // kitti deer baad animation play hoga
-        origin: 'left',
-        distance: '200px' 
+         delay:200, // kitti deer baad animation play hoga
+        origin: 'bottom',
+        distance: '100px' 
         
       });
       ScrollReveal().reveal('.card',{
-         delay:300, // kitti deer baad animation play hoga
+         delay:200, // kitti deer baad animation play hoga
         origin: 'bottom',
-        distance: '200px' ,
+        distance: '100px' ,
         interval:100
         
       });
-      
-      
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init( document.querySelectorAll ('.card'),{
+        max:10, //animation ke lie time ki kitti time limit tk hoga
+        speed:1000,
+        glare:true
+      });
+
     </script>
   </body>
 </html>
