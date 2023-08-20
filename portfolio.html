@@ -12,13 +12,13 @@
     <style>
         header{
             height:70vh ;
-            background-color: blue;
+            /* background-color: blue; */
         }
         
     .background--custom {
       background: linear-gradient(90deg, #a4baf5, #c8e74d, #f5a2a1);
       background-size: 300% 300%;
-      animation: gradient 4s alternate infinite;
+      animation: gradient 7s alternate infinite;
       
       height: 70vh;
       
@@ -36,12 +36,52 @@
     </style>
    
   </head>
-  <body>
+  <body class="bg-body-secondary">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="conatiner"></div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <!--jab lg 990 se uppr jaega tbhi mb lagega-->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
     <header class="background--custom">
-        <div class="container bg-warning h-100 d-flex align-items-center">
-            <div class="row w-100 bg-secondary">
-                <div class="col-md-4 bg-danger">
-                    <img class="w-100 img-fluid rounded-circle" style="object-fit: cover; height: 50vh;" src="img\1681330613897.jpg">
+        <div class="container h-100 d-flex align-items-center">
+            <div class="row w-100 ">
+                <div class="col-md-4 ">
+                    <img class=" img-fluid rounded-circle" style="object-fit: cover; height: 50vh;" src="img\1681330613897.jpg">
                 </div>
                 <div class="col-md-8 my-auto">
                 <h1 class="fw-bold">I am Rasheeq Zehra</h1>
@@ -53,6 +93,22 @@
         </div>
         
     </header>
+    <section>
+      <div class="container py-5">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="display-4 text-center fw-bold "> About Me</h1>
+              <hr>
+              <p fs-5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas vero,Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, veniam. placeat dolore commodi quasi, tempore molestias consequatur culpa adipisci ipsam eius error. Odio, asperiores non corporis labore provident similique obcaecati?</p>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
     <section>
       <div class="container py-5">
         <h1 class="display-4 text-center fw-bold mb-5"> My skills</h1>
@@ -78,6 +134,7 @@
             <div class="card">
               <div class="card-body">
                 <img class="img-fluid" src="https://clipartcraft.com/images/html5-logo-png-transparent-5.png" alt="">
+                <h4 class="text-center mt-4"> HTML 5</h4>
               </div>
             </div>
           </div>
@@ -85,6 +142,7 @@
             <div class="card">
               <div class="card-body">
                 <img class="img-fluid" src="https://clipartcraft.com/images/html5-logo-png-transparent-5.png" alt="">
+                <h4 class="text-center mt-4"> HTML 5</h4>
               </div>
             </div>
           </div>
@@ -92,6 +150,7 @@
             <div class="card">
               <div class="card-body">
                 <img class="img-fluid" src="https://clipartcraft.com/images/html5-logo-png-transparent-5.png" alt="">
+                <h4 class="text-center mt-4"> HTML 5</h4>
               </div>
             </div>
           </div>
@@ -99,6 +158,7 @@
             <div class="card">
               <div class="card-body">
                 <img class="img-fluid" src="https://clipartcraft.com/images/html5-logo-png-transparent-5.png" alt="">
+                <h4 class="text-center mt-4"> HTML 5</h4>
               </div>
             </div>
           </div>
@@ -112,16 +172,56 @@
         <div class="swiper myslider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-               <h1>Project 1</h1>
+              
+              <div class="card">
+                <img class="card-img-top" src="project1.png" alt="">
+                <div class="card-body">
+                  <p class="text-muted">WEb development</p>
+                  <h3>Blogging website</h3>
+                  <button class="btn btn-primary">demo</button>
+                  <button class="btn btn-dark">Github</button>
+
+                </div>
+              </div>
             </div>
             <div class="swiper-slide">
-               <h1>Project 2</h1>
+              <div class="card">
+                <img class="card-img-top" src="project1.png" alt="">
+                <div class="card-body">
+                  <p class="text-muted">WEb development</p>
+                  <h3>Blogging website</h3>
+                  <button class="btn btn-primary">demo</button>
+                  <button class="btn btn-dark">Github</button>
+
+                </div>
+              </div>
             </div>
             <div class="swiper-slide">
-              <h1>Project 3</h1>
+              <div class="card">
+                <img class="card-img-top" src="project1.png" alt="">
+                <div class="card-body">
+                  <p class="text-muted">WEb development</p>
+                  <h3>Blogging website</h3>
+                  <button class="btn btn-primary">demo</button>
+                  <button class="btn btn-dark">Github</button>
+
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img class="card-img-top" src="project1.png" alt="">
+                <div class="card-body">
+                  <p class="text-muted">WEb development</p>
+                  <h3>Blogging website</h3>
+                  <button class="btn btn-primary">demo</button>
+                  <button class="btn btn-dark">Github</button>
+
+                </div>
+              </div>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination"></div> <!--kitte pages a wo dot me krne ke lie-->
         </div>
       </div>
 
@@ -130,11 +230,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
        var swiper = new Swiper(".myslider", {
-      slidesPerView: 3,
+      slidesPerView: 3, //kitti slide dikhni chahiye
       spaceBetween: 30,
       pagination: {
         el: ".swiper-pagination",
-        clickable: true,
+        clickable: true, //dot pe click krenge to wo change hoga
       },
     });
     </script>
