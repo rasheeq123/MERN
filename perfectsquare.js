@@ -1,5 +1,20 @@
-for(let i=1; i<=5; i++)
+a=26
+if(a>0)
 {
-    for(j=1; j<=i; j++)
-    console.log('*')
+    root=(a**0.5)
+    if(square=root*root)
+    {
+        console.log("Its a perfect square")
+
+    }
+    else{
+        console.log("Its not a perfect square")
+    }
 }
+else 
+{
+    console.log("perfect square not possible")
+}
+
+
+
