@@ -1,4 +1,4 @@
-a=8;
+a=10;
 if(a===2)
 {
     console.log("prime")

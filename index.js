@@ -26,3 +26,7 @@ console.log("break")
 console.log(56+34+'32')
 console.log(4**2);
 console.log(25**0.5);
+let name="rasheeq"
+let hobby="reading"
+
+console.log(`My name is ${name} and my hobby is ${hobby}`) 
