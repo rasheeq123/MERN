@@ -17,7 +17,8 @@ const ans4= rawPrices.map((d)=>{return parseInt(d.slice(1))});
 console.log(ans4);
 
 
-
+// Filter: kisko rkhna h kisko nhi rkhna h
+//Map: modify krna , saare elements ko rakha jata h,  chppl mandir wala example
 
 
 
